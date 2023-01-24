@@ -10,7 +10,7 @@ def main():
 
     def piedra():
         
-            computadora = random.randint(0,4)         
+            computadora = random.randint(1,3)         
             ganador = ""
 
             empate = ""
