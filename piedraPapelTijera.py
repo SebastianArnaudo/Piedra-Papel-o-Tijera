@@ -10,8 +10,7 @@ def main():
 
     def piedra():
         
-            computadora = random.randint(0,4)
-            
+            computadora = random.randint(0,4)         
             ganador = ""
 
             empate = ""
@@ -107,11 +106,11 @@ def main():
     
 
 
-    framePrincipal=tk.Frame(ventana,bg="Gray")
+    framePrincipal=tk.Frame(ventana,bg="Purple")
     framePrincipal.pack(expand=True,fill="both")
 
 
-    lBienvenida=tk.Label(framePrincipal,text="Bienvenido\n Elija su jugada",bg="Gray")
+    lBienvenida=tk.Label(framePrincipal,text="Bienvenido\n Elija su jugada",fg="White",bg="Purple")
     lBienvenida.place(x=100, y=10)
 
     bPiedra=tk.Button(framePrincipal,text="Piedra",bg="Green1", command= piedra)
@@ -123,13 +122,13 @@ def main():
     bTijera=tk.Button(framePrincipal,text="Tijera",bg="Blue1",fg="white", command= tijera)
     bTijera.place(x=125,y=90)
 
-    lJugadas=tk.Label(framePrincipal,text="",bg="Gray")
+    lJugadas=tk.Label(framePrincipal,text="",fg="White",bg="Purple")
     lJugadas.place(x=65,y=150)
 
-    lGanador=tk.Label(framePrincipal,text="",bg="Gray")
+    lGanador=tk.Label(framePrincipal,text="",fg="White",bg="Purple")
     lGanador.place(x=90,y=200)
 
-    lEmpate=tk.Label(framePrincipal,text="",bg="Gray")
+    lEmpate=tk.Label(framePrincipal,text="",fg="White",bg="Purple")
     lEmpate.place(x=120, y=230)
     
 
